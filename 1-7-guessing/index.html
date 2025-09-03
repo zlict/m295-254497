@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const randomNumber = Math.floor(Math.random() * 100);
+        let lastGuess = undefined;
+
+        while (lastGuess != randomNumber) {
+            lastGuess = prompt("Rate eine Zahl zwischen 1 und 100");
+
+            if (lastGuess < randomNumber) {
+                alert("zu tief");
+            } else if (lastGuess > randomNumber) {
+                alert("zu hoch");
+            } else {
+                alert("Glückwunsch! Du hast die Zahl gefunden.")
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

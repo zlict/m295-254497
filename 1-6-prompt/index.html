@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const username = prompt("Wie heissen Sie?");
+        const currentHours = new Date().getHours();
+
+        if (currentHours < 11) {
+            alert(`Guten Morgen ${username}`);
+        } else if (currentHours < 17) {
+            alert(`Guten Tag ${username}`);
+        } else {
+            alert(`Guten Abend ${username}`);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

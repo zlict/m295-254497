@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const numbers = [];
+        let lastPrompt = undefined;
+
+        while(true) {
+            lastPrompt = parseInt(prompt("Bitte gibt eine Zahl oder Nichts ein"));
+
+            if (!isNaN(lastPrompt)) {
+                numbers.push(lastPrompt);
+            } else {
+                break;
+            }
+        }
+
+        let sum = 0;
+        numbers.forEach((number) => sum += number);
+        alert(`Die Summe deiner Zahlen ist ${sum}.`);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
