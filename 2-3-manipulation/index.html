@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .large {
+            font-size: 2em;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const bodyElement = document.querySelector("body");
+            bodyElement.style = "background-color: salmon";
+
+            const h1Element = document.querySelector("h1");
+            h1Element.innerText = "Robin Bühler";
+
+            const pElement = document.querySelector("p");
+            pElement.classList.add("large");
+
+            const ulElement = document.querySelector("ul");
+            const liElement = document.createElement("li");
+            liElement.innerText = "Drittens";
+            ulElement.append(liElement);
+
+            const secondLiElement = document.querySelector("li:nth-of-type(2)");
+            secondLiElement.remove();
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Platzhalter</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur delectus voluptates cumque numquam
+        eius
+        illum eaque animi nesciunt quos, dicta voluptate omnis quae asperiores reprehenderit tempora tenetur totam
+        fugit!
+    </p>
+    <p>
+        Eaque, sit voluptatum obcaecati deserunt nostrum in eveniet temporibus suscipit porro debitis! Odio doloremque
+        ullam quaerat voluptas unde. Perspiciatis ipsam quis itaque officiis sapiente iusto, nulla omnis ipsum sed
+        voluptas!
+    </p>
+    <p>
+        Accusamus, nam nemo atque sunt tempora commodi asperiores eos aspernatur quod adipisci voluptates exercitationem
+        ducimus delectus iure ex explicabo nihil eum dignissimos incidunt repellendus totam tenetur nisi sed voluptate.
+        Soluta!
+    </p>
+    <p>
+        Sequi, voluptates. Exercitationem ea porro incidunt nobis, temporibus doloremque optio perferendis iste
+        voluptate, fugit nesciunt veniam quia. Maxime illum officia modi neque unde. Ullam autem pariatur commodi
+        dolorum, atque nemo?
+    </p>
+    <p>
+        Consequuntur architecto consectetur et cum mollitia est alias fugit dolorem, facere aspernatur rem sed, in
+        dolore, aliquam quos non hic! Reprehenderit culpa cupiditate, esse perferendis ab optio quasi modi est.
+    </p>
+    <ul>
+        <li>Erstens</li>
+        <li>Zweitens</li>
+    </ul>
+</body>
+
+</html>
