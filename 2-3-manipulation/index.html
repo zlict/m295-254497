@@ -28,6 +28,10 @@
 
             const secondLiElement = document.querySelector("li:nth-of-type(2)");
             secondLiElement.remove();
+
+            const imgElement = document.createElement("img");
+            imgElement.src = "./homer.png";
+            h1Element.parentNode.insertBefore(imgElement, h1Element.nextElementSibling);
         });
     </script>
 </head>
